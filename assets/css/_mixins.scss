@@ -1,0 +1,6 @@
+@mixin Typography($fontfamily , $fontWeight , $size , $lineHeight){
+    font-family: $fontfamily;
+    font-weight: $fontWeight;
+    font-size: $size;
+    line-height: $lineHeight;
+}

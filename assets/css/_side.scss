@@ -1,0 +1,49 @@
+@import '_variables';
+@import '_mixins';
+
+#main {
+    #side-bar {
+        grid-column: 1 / 4;
+        grid-row: 1 /  5;
+        border-right: 3px solid $border-side;
+        p{
+            @include Typography(("Jua", sans-serif),400,35px , 43.75px);
+            margin-top: 19px;
+            padding-left: 26px;
+         }
+         .side-bar-contact{
+            margin-top: 27px;
+            .side-img{
+                width: 90px;
+                margin: auto;
+            }
+            .side-bar-content{
+                text-align: center;
+                p{
+                    @include Typography(("Jua", sans-serif),400 ,25px , 31.25px);
+                    margin:{
+                        top: 0;
+                        bottom: 3px;
+                    }
+                }
+                span{
+                    @include Typography(("Inter", sans-serif),500, 18px,21.78px);
+                }
+            }
+            ul{
+                margin-top: 64px;
+                @for $i from 1 through 3 {
+                    li:nth-child(#{$i})  {
+                        margin:12px 0;
+                        svg{
+                            vertical-align: middle;
+                        }
+                        span{
+                            @include Typography(("Inter", sans-serif), 500, 15px, 18.15px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

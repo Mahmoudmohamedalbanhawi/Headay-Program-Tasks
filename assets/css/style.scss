@@ -1,94 +1,11 @@
-@import '_reset';
 @import '_variables';
-@import '_section';
-@import '_media.scss';
+@import '_reset';
+@import '_side';
+@import '_header';
+@import '_mixins';
+@import '_common.scss';
+@import '_main.scss';
+@import '_section.scss';
 
-@mixin changelineHeight($lineHeight){
-    line-height:$lineHeight; 
-}
-@mixin AligningText($align){
-    text-align: $align;
-}
 
-main{
-    #main-section{
-        @extend %common;
-        p{
-            @include AligningText($center);
-            @include changelineHeight($heavy-lineHeight);
 
-            font:{
-                weight:$Normal-weight;
-                size:$heavy-font;
-            }
-            margin-bottom: 10.53px;
-        }
-        .box{
-            width: 250px;
-            // padding: 16px 0;
-            background-color:$lightBlue;
-            margin: auto;
-            border:{
-                radius:$radius;
-                width:$width;
-            }
-            .input{
-                width: 80%;
-                input {
-                    border: none;  
-                    background-color: transparent;
-                   padding:{
-                    left: 10.92px;
-                   }
-                   margin-bottom: 3px;
-                }
-                input:focus{
-                    outline: none; 
-                    border: none;
-                 }
-            }
-            .btn {
-                width: 20%;
-                svg{
-                    float: right;
-                    cursor: pointer;
-                }
-            }
-            
-        }
-        .to-do-lists{
-            margin-top:15.49px ;
-            border-top: 1px solid rgba($color: #000000, $alpha: 0.5); 
-            li{
-                @for $i from 1 through 3 {
-                    &:nth-child(#{$i}){
-                        background-color: $lightBlue;
-                        position: relative;
-                        margin: 15px 0;
-                        padding:18px 0;
-                        border-radius: 5px;
-                        .submit-icon{
-                            position: absolute;
-                            left: 20.79px;
-                            top: 40%;
-                            transform: translateY(-50%);
-                            border-radius: 5px;
-                            border:1px solid $color;
-                            padding:{
-                                left:3px;
-                                right:3px;
-                            }
-                        }
-                        p{
-                            font-size: $Normal-size;
-                            font-weight: $Normal-weight;
-                            line-height: $Normal-lineHeight;
-                        }
-                        
-                    }
-                }
-            }          
-        }
-    }
-
-}
