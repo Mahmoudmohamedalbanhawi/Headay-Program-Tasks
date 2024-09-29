@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #3f72af;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clr {
+  clear: both;
+}
+
+main #main-section {
+  background-color: #f9f7f7;
+  padding: 19.82px 0px;
+  border-radius: 20px;
+  width: 600px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  margin: 56.56px auto;
+}
+
+@media screen and (min-width: 390px) and (max-width: 420px) {
+  main #main-section {
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 46.2px;
+    height: 500px;
+  }
+  main #main-section .container {
+    width: 90%;
+  }
+  main #main-section .container .to-do-lists {
+    position: relative;
+  }
+  main #main-section .container .to-do-lists li p {
+    display: none;
+  }
+  main #main-section .container .to-do-lists li:nth-child(1) {
+    padding: 18px 0;
+  }
+  main #main-section .container .to-do-lists li:nth-child(1) .submit-icon {
+    position: absolute;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 0px;
+  }
+  main #main-section .container .to-do-lists li:nth-child(1) .submit-icon svg {
+    opacity: 0;
+  }
+  main #main-section .container .to-do-lists li:nth-child(2) {
+    display: none;
+    padding: 18px 0;
+  }
+  main #main-section .container .to-do-lists li:nth-child(2) .submit-icon {
+    position: absolute;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 0px;
+  }
+  main #main-section .container .to-do-lists li:nth-child(2) .submit-icon svg {
+    opacity: 0;
+  }
+  main #main-section .container .to-do-lists li:nth-child(3) {
+    display: none;
+    padding: 18px 0;
+  }
+  main #main-section .container .to-do-lists li:nth-child(3) .submit-icon {
+    position: absolute;
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #AAAAAA;
+    border-radius: 0px;
+  }
+  main #main-section .container .to-do-lists li:nth-child(3) .submit-icon svg {
+    opacity: 0;
+  }
+}
+main #main-section p {
+  text-align: center;
+  line-height: 45.96px;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 10.53px;
+}
+main #main-section .box {
+  width: 250px;
+  background-color: #DBE2EF;
+  margin: auto;
+  border-radius: 5px;
+  border-width: 1px;
+}
+main #main-section .box .input {
+  width: 80%;
+}
+main #main-section .box .input input {
+  border: none;
+  background-color: transparent;
+  padding-left: 10.92px;
+  margin-bottom: 3px;
+}
+main #main-section .box .input input:focus {
+  outline: none;
+  border: none;
+}
+main #main-section .box .btn {
+  width: 20%;
+}
+main #main-section .box .btn svg {
+  float: right;
+  cursor: pointer;
+}
+main #main-section .to-do-lists {
+  margin-top: 15.49px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+main #main-section .to-do-lists li:nth-child(1) {
+  background-color: #DBE2EF;
+  position: relative;
+  margin: 15px 0;
+  padding: 18px 0;
+  border-radius: 5px;
+}
+main #main-section .to-do-lists li:nth-child(1) .submit-icon {
+  position: absolute;
+  left: 20.79px;
+  top: 40%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  border: 1px solid #7D7C7C;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+main #main-section .to-do-lists li:nth-child(1) p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.79px;
+}
+main #main-section .to-do-lists li:nth-child(2) {
+  background-color: #DBE2EF;
+  position: relative;
+  margin: 15px 0;
+  padding: 18px 0;
+  border-radius: 5px;
+}
+main #main-section .to-do-lists li:nth-child(2) .submit-icon {
+  position: absolute;
+  left: 20.79px;
+  top: 40%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  border: 1px solid #7D7C7C;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+main #main-section .to-do-lists li:nth-child(2) p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.79px;
+}
+main #main-section .to-do-lists li:nth-child(3) {
+  background-color: #DBE2EF;
+  position: relative;
+  margin: 15px 0;
+  padding: 18px 0;
+  border-radius: 5px;
+}
+main #main-section .to-do-lists li:nth-child(3) .submit-icon {
+  position: absolute;
+  left: 20.79px;
+  top: 40%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  border: 1px solid #7D7C7C;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+main #main-section .to-do-lists li:nth-child(3) p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.79px;
+}/*# sourceMappingURL=style.css.map */

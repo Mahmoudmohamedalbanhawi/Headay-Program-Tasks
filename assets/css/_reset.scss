@@ -1,0 +1,28 @@
+@import '_variables';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: $body-background;
+}
+.container{
+    width: 80%;
+    margin: auto;
+} 
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;  
+}
+.clr{
+    clear: both;
+}
