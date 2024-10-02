@@ -1,0 +1,55 @@
+.main {
+    .opinions{
+        margin-top: 60px;
+        svg {
+        top: 16%;
+            left: 13%;
+        }
+        .text-center{
+           p{
+            @include Typography(24px , 900 , 24.24px);
+            margin-bottom:24px ;
+           }
+           h2{
+            @include Typography(48px , 900 , 48.48px);
+            margin-bottom: 60px;
+           }
+
+        }
+        .Reviews-section {
+            padding-top: 32px;
+            padding-right: 24px;
+            margin-bottom: 36px;
+            width: 33.33%;
+            border-radius: 25px;
+            padding-bottom: 32px;
+            padding-left: 24px;
+            min-height: 294px;
+            .star-icon{
+                margin-bottom: 18px;
+            }
+            .review-img {
+                
+                width: 50px;
+                height: 48px;
+               margin-left: 13px;
+                img{
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+            .review-name {
+                h3{
+                    @include Typography(24px , 900 , 24.24px);
+                    margin-top: 8px;
+                }
+            }
+            .review-feedback{
+                p{
+                    @include Typography(18px , 400 , 28px);
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}

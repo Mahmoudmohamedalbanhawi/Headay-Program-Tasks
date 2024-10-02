@@ -94,6 +94,14 @@
   background-color: #000000;
 }
 
+.candygrape-600 {
+  color: #755AE8;
+}
+
+.candygrape-600-bg {
+  background-color: #755AE8;
+}
+
 @media (min-width: 360px) and (max-width: 420px) {
   .container {
     max-width: 90%;
@@ -313,7 +321,6 @@ h-100 {
   background-position: center center;
   background-size: cover;
   background-repeat: repeat;
-  padding-top: 80px;
   margin-bottom: 60px;
 }
 .header .header-content h1 {
@@ -468,6 +475,10 @@ h-100 {
 .main .trips {
   margin-top: 100px;
 }
+.main .trips svg {
+  top: 0;
+  left: 40%;
+}
 .main .trips p {
   font-size: 24px;
   font-weight: 900;
@@ -483,8 +494,11 @@ h-100 {
 .main .trips .section-trips {
   width: 33.33%;
 }
-.main .trips .section-trips .section-trips-img img {
-  width: 100%;
+.main .trips .section-trips svg {
+  top: -100px;
+}
+.main .trips .section-trips .section-trip-img img {
+  width: 222px;
 }
 .main .trips .section-trips .section-trips-content h4 {
   font-size: 24px;
@@ -590,6 +604,10 @@ h-100 {
 
 .main .opinions {
   margin-top: 60px;
+}
+.main .opinions svg {
+  top: 16%;
+  left: 13%;
 }
 .main .opinions .text-center p {
   font-size: 24px;
@@ -831,6 +849,9 @@ h-100 {
   }
   .main .trips {
     margin-top: 76px;
+  }
+  .main .trips svg {
+    left: 10%;
   }
   .main .trips .trip {
     flex-direction: column;
