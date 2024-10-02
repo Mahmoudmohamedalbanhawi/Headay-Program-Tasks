@@ -1,0 +1,338 @@
+
+@media  (min-width: $media-sm) and (max-width: $media-sm-max)  {
+    .header{
+       
+        .header-content {
+           
+            h1 {
+                @include Typography(38px , 900 , 49px);
+                margin-bottom: 18px;
+            }
+           p{
+            @include Typography(17px , 500 , 30px);
+
+           }
+           .btn {
+            button{
+              width: 320px;  
+              a{
+                @include Typography(17px , 700 , 24px);
+              }
+            }
+           }
+           .arrow {
+           
+            svg{
+                margin-right: 20px;
+               bottom: -100px;
+               left: -20px;
+            }
+          
+        }
+        .center {
+            
+            a{
+                @include Typography(17px , 700 , 18.02px);
+                
+            }
+        }
+        }
+    }
+    .nav {
+        .logo {
+            p{
+                @include Typography(26px , 900 , 26.26px);
+            }
+        }
+        .links {
+            display: none;
+        }
+        .youtube-link{
+            display: none;
+        }
+        .menu{
+            svg{
+                display: block;
+            }
+        }
+     
+    }
+    .main{
+        .travels{
+            .scroll-container{
+               
+                .section-travel-item{
+                    width: calc(90.33% - 20px ); 
+                    .section-travel-content{
+                        width: 80%;
+                        border-radius: 16px;
+                        left: 28px;
+                        right: 28px;
+                        h4{
+                            @include Typography(17px , 900 , 17.17px);
+                            margin-top:21px ;
+                            margin-bottom:14px ;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+            .trips{
+             margin-top:76px;
+
+             .trip{
+                flex-direction: column;
+                padding-top: 64px;
+                padding-bottom: 64px;
+                p{
+                    @include Typography(16px , 900 , 16.6px);
+                    margin-bottom: 12px;
+                }
+                h2 {
+                    @include Typography(24px , 900 , 24.24px);
+                    margin-bottom:64px ;
+                }
+                .section-trips {
+                    width: 100%;
+                    .section-trips-img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .section-trips-content{
+                        h4{
+                            @include Typography(20px , 900 , 20.2px);
+                            margin-top: 29px;
+                            margin-bottom:20px ;
+                        }
+                        p{
+                            @include Typography(17px , 400 , 28px);
+            
+                        }
+                    }
+                }
+            }
+             
+            }
+            .prices{
+                margin-top:100px;
+                .trip{
+                    flex-direction: column
+                }
+                p{
+                    @include Typography(16px , 900 , 16.16px);
+                    margin-bottom: 12px;
+                }
+                h2{
+                    @include Typography(24px , 900 , 24.24px);
+                    margin-bottom:48px ;
+                }
+                .section-trip-price{
+                   
+                    margin-top: 40px;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    width: 100%;
+                    padding-top: 38px;
+                    padding-bottom: 38px;
+                    box-shadow: 10px 10px 0px 0px $blackcolor;
+                   
+                  &:nth-child(2){
+                        position: static;
+                
+                    // margin-top: -47px; 
+                   
+                    button {
+                        a{
+                          
+                          @include Typography(17px , 700 , 24px);
+                        }
+                        
+                      }
+                  }
+                    .section-trip-benefits{
+                       
+                        span{
+                            @include Typography(22px , 700 , 23.32px);
+        
+                        }
+                        h3{
+                            @include Typography(36px , 900 , 36.36px);
+                            margin-bottom: 16px;
+                        }
+                        h4{
+                            @include Typography(24px , 900 , 24.24px);
+                            margin-bottom: 16px;
+                        }
+                        p{
+                            @include Typography(18px , 400 , 28px);
+                          
+                        }
+        
+                       
+                    }
+                   .btn{
+                    margin-top: 20px;
+                    button {
+                        padding: 10px 0;
+                      a{
+                        color: $darkBlack;
+                        @include Typography(18px , 700 , 24px);
+                      }
+                        
+                    }
+                   }
+                }
+        
+            }
+            .opinions{
+                .d-hidden-sm {
+                    display: none;
+                }
+                .text-center{
+                   p{
+                    @include Typography(16px , 900 , 16.16px);
+                    margin-bottom:12px ;
+                   }
+                   h2{
+                    @include Typography(24px , 900 , 24.24px);
+                    margin-bottom: 48px;
+                   }
+        
+                }
+                .column {
+                    flex-direction: column;
+                }
+                .Reviews-section {
+                    padding-top: 32px;
+                    padding-right: 20px;
+                    width: 100%;
+                    padding-bottom: 32px;
+                    padding-left: 20px;
+                   
+                    .review-name {
+                        h3{
+                            @include Typography(20px , 900 , 20.2px);
+                        }
+                    }
+                }
+            }
+            
+                .contact{
+                    margin-top: 75px;
+                    .text {
+                        p{
+                            @include Typography(16px , 900 , 16.16px);
+                            margin-bottom:12px ;
+                        }
+                        h2{
+                            @include Typography(24px , 900 , 24.24px);
+                            margin-bottom:48px ;
+                        }
+                    }
+                    .column{
+                        flex-direction: column;
+                    }
+                   .form-contact{
+                    width: 100%;
+                    padding-top: 64px;
+                    padding-bottom: 64px;
+                    padding-right: 32px;
+                    padding-left: 32px;
+                    border-radius:25px ;
+                    box-shadow: 10px 10px 0px 0px $blackcolor;
+                    border: 1.5px solid $darkBlack;
+                    margin-bottom: 30px;
+                   form{
+                    label {
+                        h3{
+                            @include Typography(20px , 900 , 20.2px);
+                            margin-bottom: 18px;
+                        }
+                    }
+                    
+                    
+                   }
+                   .button {
+                    button {
+                        width: 100%;
+                       a{
+                        @include Typography(17px , 700 , 24px);
+                       }
+                       }
+                   }
+                   } 
+                   .contact-help {
+                    width: 100%;
+                    text-align: center;
+                    .contact-item-help{
+                       .contact-item-img{
+                        width: 124px;
+                        img{
+                            width: 100%;
+                        }
+                       } 
+                    }
+                    .contact-item-content{
+                      p{
+                        &:nth-child(1){
+                            @include Typography(20px , 900 , 20.2px);
+                            margin-bottom:16px ;
+                        }
+                        &:nth-child(2){
+                            margin-bottom: 40px;
+                            @include Typography(17px , 400 , 28px);
+                        }
+                      }
+                    }
+            
+                   }
+            
+                }
+               
+            
+    }
+    
+    .footer{
+        padding:60px 0px;
+        .column{
+            flex-direction: column;
+            .copy-right, .disigner-name{
+                margin-top: 0;
+                
+            }
+        }
+        .d-grid{
+            border-bottom: 1px solid gray;
+            .col-12-sm {
+                grid-column: span 12 !important; 
+                grid-row: span 2 !important; 
+            }
+        
+            .col-6-sm {
+                grid-column: span 6 !important; 
+                grid-row: span 1 !important; 
+                .col-6-sm:nth-of-type(1) {
+                    grid-row: 2 / 3; 
+                }
+            
+                .col-6-sm:nth-of-type(2) {
+                    grid-row: 2 / 3; 
+                }
+            
+                .col-6-sm:nth-of-type(3) {
+                    grid-row: 3 / 4; 
+                }
+            
+                .col-6-sm:nth-of-type(4) {
+                    grid-row: 3 / 4; 
+                }
+            }
+        
+           
+        }
+      
+    }
+}

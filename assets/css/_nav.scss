@@ -1,0 +1,45 @@
+.nav {
+    padding-top: 30.2px;
+   
+    .logo {
+        p {
+            @include Typography(30px , 900 , 30.3px);
+        }
+       
+    }
+    .links{
+        li{
+            padding-left: 20px;
+            padding-right:20px;
+        }
+        a{
+            @include Typography(20px , 700 , 21.2px)
+        }
+    }
+    .menu{
+        svg{
+         display: none;
+        }
+     }
+    .youtube-link{
+        cursor: pointer;
+        
+        p{
+            @include Typography(20px , 700 , 21.2px )
+        }
+       
+        .btn {
+       
+            margin-right: 5px;
+            button {
+                cursor: pointer;
+                width: 42px;
+                height: 30px;
+                border-radius: 15px;
+                border: none;
+            }
+        }
+    }
+   
+}
+

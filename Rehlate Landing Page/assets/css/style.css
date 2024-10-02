@@ -1,0 +1,1066 @@
+.primaryColor {
+  color: #ffffff;
+}
+
+.primaryColor-bg {
+  background-color: #ffffff;
+}
+
+.GrayColor {
+  color: #A5A5A5;
+}
+
+.GrayColor-bg {
+  background-color: #A5A5A5;
+}
+
+.darkBlack {
+  color: #191919;
+}
+
+.darkBlack-bg {
+  background-color: #191919;
+}
+
+.Gray-100 {
+  color: #797979;
+}
+
+.Gray-100-bg {
+  background-color: #797979;
+}
+
+.Gray-200 {
+  color: #4C4C4C;
+}
+
+.Gray-200-bg {
+  background-color: #4C4C4C;
+}
+
+.RiseNShine {
+  color: #FEC430;
+}
+
+.RiseNShine-bg {
+  background-color: #FEC430;
+}
+
+.RiseNShine300 {
+  color: #FFE7AC;
+}
+
+.RiseNShine300-bg {
+  background-color: #FFE7AC;
+}
+
+.RiseNShine100 {
+  color: #FFF9EA;
+}
+
+.RiseNShine100-bg {
+  background-color: #FFF9EA;
+}
+
+.CandyGrape {
+  color: #755AE8;
+}
+
+.CandyGrape-bg {
+  background-color: #755AE8;
+}
+
+.CandyGrape-100 {
+  color: #F1EFFD;
+}
+
+.CandyGrape-100-bg {
+  background-color: #F1EFFD;
+}
+
+.CandyGrape-800 {
+  color: #46368B;
+}
+
+.CandyGrape-800-bg {
+  background-color: #46368B;
+}
+
+.blackcolor {
+  color: #000000;
+}
+
+.blackcolor-bg {
+  background-color: #000000;
+}
+
+@media (min-width: 360px) and (max-width: 420px) {
+  .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 421px) {
+  .container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clr {
+  clear: both;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vertical-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical-bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+h-100 {
+  height: 100%;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.left-50 {
+  left: 50%;
+}
+
+.transform-translate-x-50 {
+  transform: translateX(-50%);
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.right-50 {
+  right: 50%;
+}
+
+.gap-25 {
+  gap: 25px;
+}
+
+.gap-35 {
+  gap: 35px;
+}
+
+.w-80 {
+  width: 80%;
+  margin: auto;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.bottom-15 {
+  bottom: 15px;
+}
+
+.bottom-30 {
+  bottom: 30px;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.radius-25 {
+  border-radius: 25px;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
+}
+
+.padding-bottom-100 {
+  padding-bottom: 100px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.header {
+  background-image: url("../images/header-image.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  padding-top: 80px;
+  margin-bottom: 60px;
+}
+.header .header-content h1 {
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 68.68px;
+}
+.header .header-content p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 28px;
+  margin-bottom: 36px;
+}
+.header .header-content .btn {
+  margin-bottom: 70px;
+}
+.header .header-content .btn button {
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  padding: 8px 0;
+}
+.header .header-content .btn button a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 7px;
+}
+.header .header-content .arrow svg {
+  margin-right: 20px;
+  bottom: -70px;
+  left: 0px;
+}
+.header .header-content .center {
+  margin-bottom: 26px;
+}
+.header .header-content .center a {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21.2px;
+}
+.header .header-content .mouse {
+  cursor: pointer;
+  width: 36px;
+  height: 60px;
+  border-radius: 18px;
+  box-shadow: 0px 8px 28px 0px rgba(37, 37, 37, 0.1019607843);
+}
+.header .header-content .mouse .mouse-line {
+  width: 4px;
+  height: 12px;
+  border-radius: 2px;
+  top: 12px;
+}
+
+.nav {
+  padding-top: 30.2px;
+}
+.nav .logo p {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30.3px;
+}
+.nav .links li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav .links a {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21.2px;
+}
+.nav .menu svg {
+  display: none;
+}
+.nav .youtube-link {
+  cursor: pointer;
+}
+.nav .youtube-link p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21.2px;
+}
+.nav .youtube-link .btn {
+  margin-right: 5px;
+}
+.nav .youtube-link .btn button {
+  cursor: pointer;
+  width: 42px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+}
+
+.main {
+  margin-top: 60px;
+}
+.main .travels p {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 24px;
+}
+.main .travels h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48.48px;
+  margin-bottom: 60px;
+}
+.main .travels .scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.main .travels .scroll-container .section-travel-item {
+  flex: 0 0 auto;
+  width: calc(30.33% - 25px);
+  margin-right: 25px;
+}
+.main .travels .scroll-container .section-travel-item:nth-child(1) {
+  margin-right: 0;
+}
+.main .travels .scroll-container .section-travel-item:nth-child(4) {
+  margin-left: 0;
+}
+.main .travels .scroll-container .section-travel-item .section-item-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 450.19px;
+  width: 100%;
+}
+.main .travels .scroll-container .section-travel-item .section-travel-content {
+  width: 80%;
+  border-radius: 20px;
+  left: 24px;
+  right: 24px;
+}
+.main .travels .scroll-container .section-travel-item .section-travel-content h4 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.main .travels .scroll-container .section-travel-item .section-travel-content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18.18px;
+}
+
+.main .trips {
+  margin-top: 100px;
+}
+.main .trips p {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 24px;
+}
+.main .trips h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48.48px;
+  margin-bottom: 64px;
+}
+.main .trips .section-trips {
+  width: 33.33%;
+}
+.main .trips .section-trips .section-trips-img img {
+  width: 100%;
+}
+.main .trips .section-trips .section-trips-content h4 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.main .trips .section-trips .section-trips-content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.main .prices {
+  margin-top: 100px;
+}
+.main .prices p {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 24px;
+}
+.main .prices h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48.48px;
+  margin-bottom: 111px;
+}
+.main .prices .section-trip-price {
+  margin-bottom: 30px;
+  padding-left: 33px;
+  padding-right: 33px;
+  width: 33.33%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 10px 10px 0px 0px #000000;
+  border: 1.5px solid #191919;
+}
+.main .prices .section-trip-price:nth-child(2) {
+  position: relative;
+  top: -47px;
+}
+.main .prices .section-trip-price:nth-child(2) p {
+  border-bottom: 1px solid #A5A5A5 !important;
+}
+.main .prices .section-trip-price:nth-child(2) button {
+  margin-left: 10px;
+  padding: 6px 0;
+  width: 95%;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #ffffff !important;
+}
+.main .prices .section-trip-price:nth-child(2) button a {
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.main .prices .section-trip-price .section-trip-benefits span {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 23.32px;
+}
+.main .prices .section-trip-price .section-trip-benefits h3 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 36.36px;
+  margin-bottom: 16px;
+}
+.main .prices .section-trip-price .section-trip-benefits h4 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 16px;
+}
+.main .prices .section-trip-price .section-trip-benefits p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #4C4C4C;
+}
+.main .prices .section-trip-price .btn {
+  margin-top: 30px;
+}
+.main .prices .section-trip-price .btn button {
+  margin-left: 10px;
+  padding: 6px 0;
+  width: 95%;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #191919;
+}
+.main .prices .section-trip-price .btn button a {
+  color: #191919;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main .opinions {
+  margin-top: 60px;
+}
+.main .opinions .text-center p {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 24px;
+}
+.main .opinions .text-center h2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48.48px;
+  margin-bottom: 60px;
+}
+.main .opinions .Reviews-section {
+  padding-top: 32px;
+  padding-right: 24px;
+  margin-bottom: 36px;
+  width: 33.33%;
+  border-radius: 25px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  min-height: 294px;
+}
+.main .opinions .Reviews-section .star-icon {
+  margin-bottom: 18px;
+}
+.main .opinions .Reviews-section .review-img {
+  width: 50px;
+  height: 48px;
+  margin-left: 13px;
+}
+.main .opinions .Reviews-section .review-img img {
+  border-radius: 50%;
+  width: 100%;
+}
+.main .opinions .Reviews-section .review-name h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-top: 8px;
+}
+.main .opinions .Reviews-section .review-feedback p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 18px;
+}
+
+.main .contact {
+  margin-top: 124px;
+}
+.main .contact .text p {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 24px;
+}
+.main .contact .text h2 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 48.48px;
+  margin-bottom: 64px;
+}
+.main .contact .form-contact {
+  width: 50%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-right: 32px;
+  padding-left: 32px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 0px 0px #000000;
+  border: 1.5px solid #191919;
+  margin-bottom: 30px;
+}
+.main .contact .form-contact form label h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 16px;
+}
+.main .contact .form-contact form input {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  border: 1.5px solid #191919;
+  padding: 18px 10px;
+  margin-bottom: 28px;
+}
+.main .contact .form-contact form input::-moz-placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.main .contact .form-contact form input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.main .contact .form-contact form textarea {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  border: 1.5px solid #191919;
+  height: 100px;
+}
+.main .contact .form-contact .button {
+  margin-top: 30px;
+}
+.main .contact .form-contact .button button {
+  border-radius: 15px;
+  width: 230px;
+  padding: 12px 0;
+}
+.main .contact .form-contact .button button a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.main .contact .contact-help {
+  width: 50%;
+}
+.main .contact .contact-help .contact-item-help .contact-item-img {
+  width: 124px;
+}
+.main .contact .contact-help .contact-item-help .contact-item-img img {
+  width: 100%;
+}
+.main .contact .contact-help .contact-item-content p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24.24px;
+  margin-bottom: 16px;
+}
+.main .contact .contact-help .contact-item-content p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.footer {
+  padding: 60px 0px;
+}
+.footer .d-grid {
+  border-bottom: 1px solid gray;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+.footer .d-grid p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.footer .d-flex .copy-right, .footer .d-flex .disigner-name {
+  margin-top: 24px;
+}
+.footer .d-flex .social-media-icon {
+  margin-top: 17px;
+}
+.footer .col-4 {
+  grid-column: span 4;
+  grid-row: span 3;
+}
+.footer .col-4 h4 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30.3px;
+  margin-bottom: 32px;
+}
+.footer .col-2 {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.footer .col-2 h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 360px) and (max-width: 420px) {
+  .header .header-content h1 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 49px;
+    margin-bottom: 18px;
+  }
+  .header .header-content p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .header .header-content .btn button {
+    width: 320px;
+  }
+  .header .header-content .btn button a {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .header .header-content .arrow svg {
+    margin-right: 20px;
+    bottom: -100px;
+    left: -20px;
+  }
+  .header .header-content .center a {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18.02px;
+  }
+  .nav .logo p {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 26.26px;
+  }
+  .nav .links {
+    display: none;
+  }
+  .nav .youtube-link {
+    display: none;
+  }
+  .nav .menu svg {
+    display: block;
+  }
+  .main .travels .scroll-container .section-travel-item {
+    width: calc(90.33% - 20px);
+  }
+  .main .travels .scroll-container .section-travel-item .section-travel-content {
+    width: 80%;
+    border-radius: 16px;
+    left: 28px;
+    right: 28px;
+  }
+  .main .travels .scroll-container .section-travel-item .section-travel-content h4 {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 17.17px;
+    margin-top: 21px;
+    margin-bottom: 14px;
+  }
+  .main .trips {
+    margin-top: 76px;
+  }
+  .main .trips .trip {
+    flex-direction: column;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .main .trips .trip p {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16.6px;
+    margin-bottom: 12px;
+  }
+  .main .trips .trip h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24.24px;
+    margin-bottom: 64px;
+  }
+  .main .trips .trip .section-trips {
+    width: 100%;
+  }
+  .main .trips .trip .section-trips .section-trips-img img {
+    width: 100%;
+  }
+  .main .trips .trip .section-trips .section-trips-content h4 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20.2px;
+    margin-top: 29px;
+    margin-bottom: 20px;
+  }
+  .main .trips .trip .section-trips .section-trips-content p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .main .prices {
+    margin-top: 100px;
+  }
+  .main .prices .trip {
+    flex-direction: column;
+  }
+  .main .prices p {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16.16px;
+    margin-bottom: 12px;
+  }
+  .main .prices h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24.24px;
+    margin-bottom: 48px;
+  }
+  .main .prices .section-trip-price {
+    margin-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    box-shadow: 10px 10px 0px 0px #000000;
+  }
+  .main .prices .section-trip-price:nth-child(2) {
+    position: static;
+  }
+  .main .prices .section-trip-price:nth-child(2) button a {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .main .prices .section-trip-price .section-trip-benefits span {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 23.32px;
+  }
+  .main .prices .section-trip-price .section-trip-benefits h3 {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36.36px;
+    margin-bottom: 16px;
+  }
+  .main .prices .section-trip-price .section-trip-benefits h4 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24.24px;
+    margin-bottom: 16px;
+  }
+  .main .prices .section-trip-price .section-trip-benefits p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .main .prices .section-trip-price .btn {
+    margin-top: 20px;
+  }
+  .main .prices .section-trip-price .btn button {
+    padding: 10px 0;
+  }
+  .main .prices .section-trip-price .btn button a {
+    color: #191919;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .main .opinions .d-hidden-sm {
+    display: none;
+  }
+  .main .opinions .text-center p {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16.16px;
+    margin-bottom: 12px;
+  }
+  .main .opinions .text-center h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24.24px;
+    margin-bottom: 48px;
+  }
+  .main .opinions .column {
+    flex-direction: column;
+  }
+  .main .opinions .Reviews-section {
+    padding-top: 32px;
+    padding-right: 20px;
+    width: 100%;
+    padding-bottom: 32px;
+    padding-left: 20px;
+  }
+  .main .opinions .Reviews-section .review-name h3 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20.2px;
+  }
+  .main .contact {
+    margin-top: 75px;
+  }
+  .main .contact .text p {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16.16px;
+    margin-bottom: 12px;
+  }
+  .main .contact .text h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24.24px;
+    margin-bottom: 48px;
+  }
+  .main .contact .column {
+    flex-direction: column;
+  }
+  .main .contact .form-contact {
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-right: 32px;
+    padding-left: 32px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 0px 0px #000000;
+    border: 1.5px solid #191919;
+    margin-bottom: 30px;
+  }
+  .main .contact .form-contact form label h3 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20.2px;
+    margin-bottom: 18px;
+  }
+  .main .contact .form-contact .button button {
+    width: 100%;
+  }
+  .main .contact .form-contact .button button a {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .main .contact .contact-help {
+    width: 100%;
+    text-align: center;
+  }
+  .main .contact .contact-help .contact-item-help .contact-item-img {
+    width: 124px;
+  }
+  .main .contact .contact-help .contact-item-help .contact-item-img img {
+    width: 100%;
+  }
+  .main .contact .contact-help .contact-item-content p:nth-child(1) {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20.2px;
+    margin-bottom: 16px;
+  }
+  .main .contact .contact-help .contact-item-content p:nth-child(2) {
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  .footer {
+    padding: 60px 0px;
+  }
+  .footer .column {
+    flex-direction: column;
+  }
+  .footer .column .copy-right, .footer .column .disigner-name {
+    margin-top: 0;
+  }
+  .footer .d-grid {
+    border-bottom: 1px solid gray;
+  }
+  .footer .d-grid .col-12-sm {
+    grid-column: span 12 !important;
+    grid-row: span 2 !important;
+  }
+  .footer .d-grid .col-6-sm {
+    grid-column: span 6 !important;
+    grid-row: span 1 !important;
+  }
+  .footer .d-grid .col-6-sm .col-6-sm:nth-of-type(1) {
+    grid-row: 2/3;
+  }
+  .footer .d-grid .col-6-sm .col-6-sm:nth-of-type(2) {
+    grid-row: 2/3;
+  }
+  .footer .d-grid .col-6-sm .col-6-sm:nth-of-type(3) {
+    grid-row: 3/4;
+  }
+  .footer .d-grid .col-6-sm .col-6-sm:nth-of-type(4) {
+    grid-row: 3/4;
+  }
+}/*# sourceMappingURL=style.css.map */

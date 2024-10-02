@@ -1,0 +1,56 @@
+.main {
+    margin-top:60px ;
+    .travels {
+        p{
+            @include Typography(24px , 900 , 24.24px);
+            margin-bottom:24px ;
+        }
+        h2{
+            @include Typography(48px , 900 , 48.48px);
+            margin-bottom: 60px;
+        }
+        .scroll-container{
+            overflow-x: auto;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            .section-travel-item{
+                flex: 0 0 auto; 
+                width: calc(30.33% - 25px); 
+                margin-right: 25px; 
+            
+                &:nth-child(1) {
+                    margin-right: 0; 
+                }
+                &:nth-child(4) {
+                    margin-left: 0; 
+                }
+             
+                
+                .section-item-img{
+                    
+                   img {
+                    object-fit: cover;
+                    max-height:450.19px ;
+                    width: 100%;
+                   }
+                }
+              
+                .section-travel-content{
+                    width: 80%;
+                    border-radius: 20px;
+                    left: 24px;
+                    right: 24px;
+                    h4{
+                        @include Typography(24px , 900 , 24.24px);
+                        margin-top:24px ;
+                        margin-bottom:16px ;
+                    }
+                    p{
+                        @include Typography(18px , 500 , 18.18px)
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,89 @@
+.main {
+    .contact{
+        margin-top: 124px;
+        .text {
+            p{
+                @include Typography(24px , 900 , 24.24px);
+                margin-bottom:24px ;
+            }
+            h2{
+                @include Typography(64px , 900 , 48.48px);
+                margin-bottom:64px ;
+            }
+        }
+       .form-contact{
+        width: 50%;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-right: 32px;
+        padding-left: 32px;
+        border-radius:25px ;
+        box-shadow: 10px 10px 0px 0px $blackcolor;
+        border: 1.5px solid $darkBlack;
+        margin-bottom: 30px;
+       form{
+        label {
+            h3{
+                @include Typography(24px , 900 , 24.24px);
+                margin-bottom: 16px;
+            }
+        }
+        input{
+            display: block;
+            width:100% ;
+            border-radius: 15px;
+            border: 1.5px solid $darkBlack;
+            padding: 18px 10px;
+            margin-bottom:28px ;
+            &::placeholder{
+                @include Typography(18px , 400 , 28px);
+            }
+           
+        }
+        textarea{
+            display: block;
+            width: 100%;
+            border-radius: 15px;
+            border: 1.5px solid $darkBlack;
+            height:100px ;
+        }
+       }
+       .button {
+        margin-top:30px ;
+        button {
+            border-radius: 15px;
+            width: 230px;
+            padding: 12px 0;
+           a{
+            @include Typography(18px , 700 , 24px);
+           }
+           }
+       }
+       } 
+       .contact-help {
+        width: 50%;
+        .contact-item-help{
+           .contact-item-img{
+            width: 124px;
+            img{
+                width: 100%;
+            }
+           } 
+        }
+        .contact-item-content{
+          p{
+            &:nth-child(1){
+                @include Typography(24px , 900 , 24.24px);
+                margin-bottom:16px ;
+            }
+            &:nth-child(2){
+                @include Typography(18px , 400 , 28px);
+            }
+          }
+        }
+
+       }
+
+    }
+   
+}
