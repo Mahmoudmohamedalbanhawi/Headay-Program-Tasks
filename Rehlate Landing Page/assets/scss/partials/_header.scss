@@ -1,0 +1,69 @@
+.header {
+    background-image: url("../images/header-image.svg");
+    background-position:center  center;
+    background-size: cover;
+    background-repeat: repeat;
+    
+    margin-bottom: 60px;
+    .header-content {
+        
+        h1{
+           
+            @include Typography(68px , 900 , 68.68px);
+        }
+        p{
+            @include Typography(24px , 500 , 40px);
+            margin-top: 28px;
+            margin-bottom: 36px;
+        }
+        .btn {
+            margin-bottom: 70px;
+            button{
+                width: 200px;
+                border-radius: 15px;
+                border: none;
+                padding: 8px 0;
+                
+                a{
+                    @include Typography(18px , 700 , 24px);
+                    margin-left: 7px;
+                    
+                }
+            }
+        }
+        .arrow {
+           
+            svg{
+                margin-right: 20px;
+               bottom: -70px;
+               left: 0px;
+            }
+          
+        }
+       
+        .center {
+            margin-bottom: 26px;
+            a{
+                @include Typography(20px , 700 , 21.2px);
+                
+            }
+        }
+        .mouse {
+            cursor: pointer;
+            width: 36px;
+            height: 60px;
+            border-radius: 18px;
+            box-shadow: 0px 8px 28px 0px #2525251A;
+           
+            .mouse-line{
+                width: 4px;
+                height: 12px;
+                border-radius: 2px;
+
+                top: 12px;
+            }
+            
+        }
+    }
+    
+}
