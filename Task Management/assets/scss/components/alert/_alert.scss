@@ -1,0 +1,62 @@
+.alert {
+    border-radius: 8px;
+    &.border-danger {
+        border: 0.5px solid $dangercolor;
+    }
+    &.alert-danger{
+        background-color:$blushwhite;
+        .text-danger{
+            color: $dangercolor;
+        }
+        .text-danger-200{
+            color: $darkred;
+        }
+    }
+ 
+    &.alert-warning {
+        background-color: $peachwhisper;
+        .text-warning {
+            color: $goldenorange;
+        }
+        .text-warning-200 {
+            color: $rustyorange;
+        }
+    }
+   
+    &.border-warning{
+        border: 0.5px solid $deepsaffron;
+    }
+    &.alert-success {
+        background-color: $pastelteal;
+        .text-success {
+            color:$deepgreen ;
+        }
+        .text-success-200 {
+            color: $deepjunglegreen;
+        }
+    }
+    &.border-success {
+        border: 0.5px solid $mediumgreen;
+    }
+    &.alert-secondary{
+        background-color: $airyfeel;
+        .text-secondary{
+            color: $brightskyblue;
+        }
+        
+    .text-secondary-200 {
+        color: $skyblue;
+    }
+    }
+    &.border-secondary {
+        border: 0.5px solid $brightskyblue;
+    }
+    
+
+}
+
+
+
+
+
+

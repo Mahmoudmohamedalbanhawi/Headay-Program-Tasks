@@ -1,0 +1,31 @@
+@mixin flex-dir($direction){
+    flex-direction: $direction;
+}
+
+@mixin align-item($aligning){
+    align-items: $aligning;
+}
+
+@mixin text-align($align){
+    text-align: $align;
+}
+
+@mixin grid-system($device){
+ 
+     .row {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: flex-start;
+        gap: 20px; // Adjust the gap as needed
+      
+        .col {
+          grid-column: span 1;
+        }
+      
+        @for $size from 1 through 12 {
+          .col-#{$size}-#{$device} {
+            grid-column: span $size;
+          }
+        }
+      }
+}

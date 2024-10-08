@@ -1,0 +1,28 @@
+@import './globals/_fonts';
+@import './globals/variables';
+@import './globals/colors';
+@import './components/alert/_alert';
+@import './globals/mixins';
+@import './globals/phone';
+@import './globals/grid';
+@import './globals/width';
+@import './globals/height';
+@import './components/recentactivity/recentactivity.scss';
+@import './components/FileAttachment/fileattachment.scss';
+@import './components/btn/button';
+@import './components/progress/progress';
+@import './components/Tasks/tasks';
+@import './components/Labels/labels';
+@import './components/illustration/illustration';
+
+@import './globals/position';
+@import './components/nav/nav';
+
+@import './components/WeeklyProgress/weeklyprogress';
+@import './components/AssignTask/assigntask';
+@import './components/projectcard/projectcard';
+@import './globals/tablet';
+@import './globals/search';
+@import './globals/Desktop';
+@import './globals/utlis';
+@import './globals/reset';

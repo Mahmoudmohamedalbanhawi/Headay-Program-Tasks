@@ -1,0 +1,51 @@
+.col-12{
+    grid-column: 1 / -1;
+}
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center{
+    @include align-item(center);
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.space-aorund{
+    justify-content: space-around;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    align-items: start;
+    gap: 20px; 
+  
+    .col {
+      grid-column: span 1;
+    }
+  
+    @for $size from 1 through 12 {
+      .col-#{$size} {
+        grid-column: span $size;
+        
+      }
+    }
+  }

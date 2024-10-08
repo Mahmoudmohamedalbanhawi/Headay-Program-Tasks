@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body{
+    background-color: $body-background;
+    font-family: $font;
+}
