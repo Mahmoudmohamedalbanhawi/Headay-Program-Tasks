@@ -1,0 +1,43 @@
+$colors-map:(
+"primarybackground":$primarybackground,
+"bluecolor":$bluecolor,
+"darkgray":$darkgray,
+"lavenderblue":$lavenderblue,
+"oceanblue":$oceanblue,
+"mintgreen":$mintgreen,
+"mediumgreen":$mediumgreen,
+"charcoalblue":$charcoalblue,
+"emeraldgreen":$emeraldgreen,
+"lavenderblue-100":$lavenderblue-100,
+"slateblue":$slateblue,
+"dangercolor":$dangercolor,
+"darkred":$darkred,
+"deepsaffron":$deepsaffron,
+"goldenorange":$goldenorange,
+"rustyorange":$rustyorange,
+"deepgreen":$deepgreen,
+"deepjunglegreen":$deepjunglegreen,
+"brightskyblue":$brightskyblue,
+"skyblue":$skyblue,
+"peachwhisper":$peachwhisper,
+"blushwhite":$blushwhite,
+"progress-purple-container":$progress-purple-container,
+"progress-success-container":$progress-success-container,
+"progress-secondary-container":$progress-secondary-container,
+"progress-purple-bar":$progress-purple-bar,
+"progress-success-bar":$progress-success-bar,
+"progress-secondary-bar":$progress-secondary-bar,
+"btn-illustration":$btn-illustration,
+"gray":$gray,
+"light-gray-100":$light-gray-100
+
+);
+
+@each $name , $hex-value in $colors-map {
+    .#{$name} {
+        color:$hex-value;
+    }
+    .#{$name}-bg{
+        background-color: $hex-value;
+    }
+}

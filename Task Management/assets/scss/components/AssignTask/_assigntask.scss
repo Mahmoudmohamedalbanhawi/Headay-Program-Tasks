@@ -1,0 +1,31 @@
+.assigntask {
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: -10px; 
+        right: 10px; 
+        transform: translateX(-50%);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff; 
+    }
+    .search-btn{
+        input {
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+        }
+    }
+    .active{
+        border-left: 2px solid $bluecolor;
+
+    }
+    .assign-img {
+        width: 36px;
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}
