@@ -1,0 +1,14 @@
+table {
+    tr{
+        // padding: 20px 35px ;
+        td{
+            @include typography("STC-REGULAR" , 18px , 26.08px , 400);
+            color: $black;
+        }
+        th{
+            @include typography("STC-Medium" , 20px , 24px , 700);
+            color: $black;
+        }
+    }
+   
+}

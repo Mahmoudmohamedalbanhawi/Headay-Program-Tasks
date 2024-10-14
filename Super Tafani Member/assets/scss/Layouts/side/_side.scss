@@ -1,0 +1,13 @@
+.side{
+    ul{
+        li{
+            a{
+                @include typography("STC-REGULAR", 13px , 16.95px ,400 );
+                
+            }
+            &.border-left-coral{
+                border-left: 5px solid $coral;
+            }
+        }
+    }
+}

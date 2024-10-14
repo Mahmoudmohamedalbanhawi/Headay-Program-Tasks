@@ -1,0 +1,26 @@
+.pill{
+    @include typography("STC-Medium" , 16px , 10.2px , 500);
+        display: flex;
+        width: 200px; 
+        border-radius: 80px;
+        overflow: hidden; 
+    .pill-left{
+        flex: 1;
+        background-color: $white-100;
+        color: $black;
+        text-align: center;
+        padding: 10px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    
+    .pill-right {
+        flex: 1;
+        background-color: $coral;
+        color: $white;
+        text-align: center;
+        padding: 10px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+      }
+}

@@ -1,0 +1,18 @@
+$colors-map:(
+"primary-background":$primary-background,
+"grey":$grey,
+"coral":$coral,
+"darkpurple":$darkpurple,
+"lightgrey":$lightgrey
+
+
+);
+
+@each $name , $hex-value in $colors-map {
+    .#{$name} {
+        color:$hex-value;
+    }
+    .#{$name}-bg{
+        background-color: $hex-value;
+    }
+}
