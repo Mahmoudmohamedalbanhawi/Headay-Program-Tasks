@@ -1,0 +1,14 @@
+@import './vendor/bootstrap.scss';
+@import './Abstracts/variables';
+@import './Abstracts/mixins';
+@import './Base/utilities';
+@import './Layouts/header/header';
+@import './Base/fonts';
+@import './Layouts/side/side';
+@import './components/Activities/activites';
+@import './components/processed/processed';
+@import './components/Searchbtn/search';
+@import './components/DropDown/dropdown';
+@import './components/table/table';
+@import './Base/colors';
+@import './Base/resets';

@@ -1,0 +1,8 @@
+.activites{
+    h1{
+        @include typography("STC-Medium" , 32px , 38.4px , 700);
+    }
+    p{
+        @include typography("STC-REGULAR" , 24px , 31.3px , 400);
+    }
+}

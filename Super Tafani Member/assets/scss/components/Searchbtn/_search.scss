@@ -1,0 +1,11 @@
+.input-group {
+    &.border-grayish-blue{
+        border-bottom:3px solid $grey ;
+    }
+    input{
+        &::placeholder{
+            color: $grey;
+            @include typography("STC-REGULAR" , 16px , 20.86px , 400);
+        }
+    }
+}
