@@ -1,7 +1,0 @@
-select {
-    &.form-select{
-        background-color: $lightgrey !important;
-        @include typography("STC-Medium" , 16px , 19.2px , 500);
-    }
-    
-}
