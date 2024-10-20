@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+</head>
+<body>
+    <div class="container">
+        <table class="table py-4 mt-4   table-striped  table-hover">
+            <thead >
+              <tr >
+                <th  scope="col"> </th>
+                <th   scope="col">Name</th>
+                <th scope="col">Company</th>
+                <th scope="col">User  </th>
+                <th scope="col">Cart</th>
+                <th ></th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+           
+          
+              
+            </tbody>
+          </table>
+    </div>
+    <div id="popupModal" class="popup-modal">
+        <div class="popup-content">
+            <h3>Update User Information</h3>
+            <form id="popupForm">
+                <input type="text" id="inputName" placeholder="Name" required />
+                <input type="text" id="inputCompany" placeholder="Company" required />
+                <input type="text" id="inputCart" placeholder="Cart" required />
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="button" class="close-btn" onclick="closePopup()">Close</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div id="overlay" class="overlay"></div>
+    <script src="./assets/JS/pop.js"></script>
+    <script src="./assets/JS/table.js"></script>
+</body>
+</html>

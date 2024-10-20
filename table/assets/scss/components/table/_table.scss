@@ -1,0 +1,21 @@
+.table{
+    thead{
+        th{
+            color: $Gray ;
+            font-weight: 400 ;
+        }
+    }
+    tbody{
+        tr{
+            td{
+                color: $Gray-dark ;
+                font-weight: 400;
+            }
+        }
+    }
+    svg{
+        cursor: pointer;
+    }
+  
+}
+
