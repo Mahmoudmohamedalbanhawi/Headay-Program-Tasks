@@ -1,7 +1,7 @@
 // index.js
 
 import { fetchCurrencies, fetchTimeSeries } from './service.js';
-import { showLoadingIndicator, hideLoadingIndicator, setFlag, setActiveTimeButton, displayDropdownList, calculateStartDate } from './utils.js';
+import { showLoadingIndicator, hideLoadingIndicator, setFlag, setActiveTimeButton, displayDropdownList, calculateStartDate , currencyToFlagCode  } from './utils.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     let currencyChart;
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const loadingIndicator = document.getElementById('loadingIndicator');
     const flag1 = document.querySelector(".flag1");
     const flag2 = document.querySelector(".flag2");
-
     const storedCurrency1 = localStorage.getItem('selectedCurrency1');
     const storedCurrency2 = localStorage.getItem('selectedCurrency2');
     const storedLastPrice = localStorage.getItem('lastPrice');
@@ -49,6 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     currency1Dropdown.addEventListener('change', () => {
         localStorage.setItem('selectedCurrency1', currency1Dropdown.value);
+        console.log(currency1Dropdown.value)
+        console.log(currencyToFlagCode[currency1Dropdown.value])
         setFlag(currency1Dropdown.value, flag1);
         updateChart(currentTimeRange);
     });
@@ -101,7 +102,7 @@ function updateChart(clickedInterval) {
             localStorage.setItem('lastPrice', lastPrice);
             localStorage.setItem('percentageChange', percentageChange);
 
-            percentage.innerHTML = `<span class="${percentageChange < 0 ? 'text-danger' : 'text-success'}">${lastPrice} </span> <span class="${percentageChange < 0 ? 'text-danger' : 'text-success'}">(${percentageChange.toFixed(2)}%)</span>`;
+            percentage.innerHTML = `<span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">${lastPrice} </span> <span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">(${percentageChange.toFixed(6) * 100}%)</span>`;
             renderChart(ctx, dates, prices);
         })
         .catch(error => {
@@ -124,9 +125,10 @@ function renderChart(ctx, labels, data) {
                 label: 'Currency Exchange Rate',
                 data: data,
                 fill: true,
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1
+                backgroundColor: 'rgb(242,250,234)',
+                borderColor: 'rgb(116,193,19)',
+                tension: 0.2,
+                pointRadius: 0,
             }]
         },
         options: {
