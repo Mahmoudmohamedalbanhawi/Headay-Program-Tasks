@@ -1,4 +1,4 @@
-export const currencyToFlagCode = {
+ const currencyToFlagCode = {
     AED: "ae",
     ALL: "al",
     AMD: "am",
@@ -75,27 +75,37 @@ export const currencyToFlagCode = {
     ZAR: "za",
     ZWL: "zw",
    };
-export function showLoadingIndicator(loadingIndicator) {
+ function showLoadingIndicator(loadingIndicator) {
     loadingIndicator.style.display = 'block';
 }
 
-export function hideLoadingIndicator(loadingIndicator) {
+ function hideLoadingIndicator(loadingIndicator) {
     loadingIndicator.style.display = 'none';
 }
 
-export function setFlag(flag, flagElement) {
-    flagElement.className = "";
-    flagElement.classList.add("fi",`fi-${currencyToFlagCode[flag]}`,"rounded-circle" , "fis")
+ function setFlag(flag, flagElement) {
+       
+       flagElement.className = "";
+
+       const flagCode = currencyToFlagCode[flag];
+   
+       if (flagCode) {
+    
+           flagElement.classList.add("fi", `fi-${flagCode}`, "rounded-circle", "fis");
+       } else {
+          
+           flagElement.classList.add("fi", "fi-un", "rounded-circle", "fis"); 
+       }
 }
 
-export function setActiveTimeButton(selectedInterval) {
+ function setActiveTimeButton(selectedInterval) {
     document.querySelectorAll('#timeControls button').forEach(button => {
         button.classList.remove('active', 'btn-outline-primary');
     });
     document.querySelector(`[data-interval="${selectedInterval}"]`).classList.add('active', 'btn-outline-primary');
 }
 
-export function displayDropdownList(dropdown, currencies, defaultValue) {
+ function displayDropdownList(dropdown, currencies, defaultValue) {
     for (const [currency, country] of Object.entries(currencies)) {
         const option = document.createElement("option");
         option.value = currency;
@@ -108,7 +118,7 @@ export function displayDropdownList(dropdown, currencies, defaultValue) {
 }
 
 
-export function calculateStartDate(interval) {
+ function calculateStartDate(interval) {
     const now = new Date();
     const londonTimeOffset = new Date(now.getTime() - 3 * 60 * 60 * 1000); 
     let startDate;

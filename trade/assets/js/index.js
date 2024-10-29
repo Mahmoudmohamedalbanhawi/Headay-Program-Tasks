@@ -1,7 +1,5 @@
 // index.js
 
-import { fetchCurrencies, fetchTimeSeries } from './service.js';
-import { showLoadingIndicator, hideLoadingIndicator, setFlag, setActiveTimeButton, displayDropdownList, calculateStartDate , currencyToFlagCode  } from './utils.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     let currencyChart;
@@ -17,17 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const flag2 = document.querySelector(".flag2");
     const storedCurrency1 = localStorage.getItem('selectedCurrency1');
     const storedCurrency2 = localStorage.getItem('selectedCurrency2');
-    const storedLastPrice = localStorage.getItem('lastPrice');
-    const storedPercentageChange = localStorage.getItem('percentageChange');
-    const storedInterval = localStorage.getItem('selectedInterval') || '15m';
+    const storedInterval =  '15m';
+    const errorMessageElement = document.querySelector(".errorMessage")
     let currentTimeRange = storedInterval;
 
     if (storedCurrency1) currency1Dropdown.value = storedCurrency1;
     if (storedCurrency2) currency2Dropdown.value = storedCurrency2;
 
-    if (storedLastPrice && storedPercentageChange) {
-        percentage.innerHTML = `<span class="${storedPercentageChange < 0 ? 'text-danger' : 'text-success'}">${storedLastPrice} </span> <span class="${storedPercentageChange < 0 ? 'text-danger' : 'text-success'}">(${parseFloat(storedPercentageChange).toFixed(2)}%)</span>`;
-    }
+
+
 
     setActiveTimeButton(storedInterval);
 
@@ -44,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => {
             hideLoadingIndicator(loadingIndicator);
             console.error('Error fetching the data:', error);
+            errorMessageElement.textContent = `Failed to load data. Please check your internet connection or try again later.`;
+            errorMessageElement.classList.replace("d-none" ,"d-block")
         });
 
     currency1Dropdown.addEventListener('change', () => {
@@ -102,7 +100,7 @@ function updateChart(clickedInterval) {
             localStorage.setItem('lastPrice', lastPrice);
             localStorage.setItem('percentageChange', percentageChange);
 
-            percentage.innerHTML = `<span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">${lastPrice} </span> <span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">(${percentageChange.toFixed(6) * 100}%)</span>`;
+            percentage.innerHTML = `<span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">${lastPrice} </span> <span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">(${percentageChange.toFixed(6) }%)</span>`;
             renderChart(ctx, dates, prices);
         })
         .catch(error => {
