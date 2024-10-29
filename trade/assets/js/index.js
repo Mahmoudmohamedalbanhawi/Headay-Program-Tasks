@@ -97,10 +97,17 @@ function updateChart(clickedInterval) {
             const lastPrice = prices[prices.length - 1];
             const percentageChange = ((lastPrice - firstPrice) / firstPrice) * 100;
 
-            localStorage.setItem('lastPrice', lastPrice);
-            localStorage.setItem('percentageChange', percentageChange);
+            
+            const changeClass = percentageChange < 0 ? 'text-danger' : 'text-success';
+    
+            
+            percentage.classList.remove('text-danger', 'text-success');
+            percentage.classList.add(changeClass , "fw-bold");
+        
+          
+            percentage.textContent = `${lastPrice} (${parseFloat(percentageChange).toFixed(2)}%)`;
+        
 
-            percentage.innerHTML = `<span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">${lastPrice} </span> <span class="${percentageChange < 0 ? 'text-danger' : 'text-success'} fw-bold">(${percentageChange.toFixed(6) }%)</span>`;
             renderChart(ctx, dates, prices);
         })
         .catch(error => {
