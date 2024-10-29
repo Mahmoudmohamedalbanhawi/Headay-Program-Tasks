@@ -112,7 +112,8 @@ function updateChart(clickedInterval) {
         })
         .catch(error => {
             hideLoadingIndicator(loadingIndicator);
-            console.error('Error fetching the time series data:', error);
+            errorMessageElement.textContent = `Failed to load data. Please check your internet connection or try again later.`;
+            errorMessageElement.classList.replace("d-none" ,"d-block")
         });
 }
 function renderChart(ctx, labels, data) {
