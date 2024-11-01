@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <title>Currency Dropdowns</title>
+    <style>
+ 
+
+    </style>
+</head>
+<body>
+    <div class="container  min-vh-100">
+        <h1>Forex Exchange</h1>
+        <p>Check out the current price for a currency pair</p>
+        <div class="row gap-5 justify-content-center align-items-center">
+            <div class="col-md-4 pb-5 col-sm-12">
+                <div>
+                    <label for="currency1">Select Currency 1:</label>
+                <select class="form-control dropdown dropdown-menu-end"  id="currency1"></select>
+                
+                <label for="currency2">Select Currency 2:</label>
+                <select class="form-control"  id="currency2"></select>
+                </div>
+            </div>
+            <div class="col-md-7 rounded-3 shadow py-3 col-sm-12">
+                
+   <div class="container">
+    <div class="flag1 flag-icon flag-icon-squared  " style="font-size: 35px;">
+
+    </div>
+    <div class="flag2 flag-icon flag-icon-squared  " style="font-size: 35px;">
+
+    </div>
+    <div class="d-md-flex  justify-content-between ">
+     <div id="currencyNames" class="fw-bold text-center">
+ 
+     </div>
+     <div>
+      <p id="price" class="fw-bold"></p>
+     <p id="percentage" ></p>
+     </div>
+    </div>
+    </div>
+    <div class="errorMessage alert alert-danger d-none" role="alert">
+        
+      </div>
+                 <canvas id="currencyChart" width="400" height="150"></canvas>
+                 <div class="text-center  mt-2" id="timeControls">
+                    <button class="btn text-black fw-bold"  data-interval="15m">15m</button>
+                    <button class="btn text-black fw-bold" data-interval="1h">1h</button>
+                    <button class="btn text-black fw-bold" data-interval="1D">1D</button>
+                    <button class="btn text-black fw-bold" data-interval="1W">1W</button>
+                    <button class="btn text-black fw-bold" data-interval="1M">1M</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <p></p>
+   
+
+   <div id="loadingIndicator" >
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   
+    <!-- <script src="./assets/js/index.js" type="module"></script>  -->
+    <!-- <script src="./assets/js/utils.js"></script> -->
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/service.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
