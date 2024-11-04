@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/Abstract/variables';
+.LavenderMist{
+    background-color: $bodybackground;
+}
+.text-active{
+    color: $textactive !important;
+}
+.text-100{
+    color: $text-100;
+}

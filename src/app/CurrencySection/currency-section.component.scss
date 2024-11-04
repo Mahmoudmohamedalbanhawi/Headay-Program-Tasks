@@ -1,0 +1,21 @@
+@import '../Abstract/variables';
+.container {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../../assets/images/5171868.jpg);
+    &::before {
+        content: '';
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 100%; 
+     height: 5px; 
+     border-radius: 4px;
+     background-color: $bordercolor; 
+     border-top-left-radius: 15px; 
+     border-top-right-radius: 15px;
+     top: 0;
+    }
+}
+

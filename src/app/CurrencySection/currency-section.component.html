@@ -1,0 +1,35 @@
+<section class="container ">
+    <input type="text" [(ngModel)]="amount" class="form-control w-50 m-auto" placeholder="Amount"/>
+    <div class="row justify-content-center mt-3">
+        <div class="col-6 text-start">
+          <label for="currency1">from</label>
+        </div>
+       
+      </div>
+    <select [(ngModel)]="fromCurrency" class="form-control dropdown m-auto  dropdown-menu-end w-50"  id="currency1">
+        <option value="" disabled selected> Country</option>
+        <option *ngFor="let currency of currencies" [value]="currency.currency"  > {{currency.currency}}</option>
+    </select>
+    <div class="row justify-content-center mt-3">
+        <div class="col-6 text-start">
+          <label for="currency2">To</label>
+        </div>
+       
+      </div>
+    <select [(ngModel)]="toCurrency" class="form-control dropdown m-auto  dropdown-menu-end w-50"  id="currency2">
+        <option  disabled selected> Country</option>
+        <option *ngFor="let currency of currencies" [value]="currency.currency"  > {{currency.currency}}</option>
+    </select>
+    <p class="text-center mt-3">Exchange Rate</p>
+    <ng-container *ngIf="ConvertAmount !== null; else zeroAmount">
+        <h2 class="text-center text-primary fw-bold"> {{ ConvertAmount | currency: toCurrency }}</h2>
+      </ng-container>
+      
+      <ng-template #zeroAmount>
+        <p class="text-center text-primary fw-bold">0.00</p>
+      </ng-template>
+   <div class="text-center mt-5">
+    <button class="btn btn-primary " (click)="convertCurrency()">Convert</button>
+   </div>
+   
+</section>
