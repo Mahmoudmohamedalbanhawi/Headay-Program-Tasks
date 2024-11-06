@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ICurrency } from "./currency";
+import { ICurrency } from "../../assets/Shared/Interfaces/Currency";
 
 @Component({
     selector:"app-currency",
@@ -7,6 +7,7 @@ import { ICurrency } from "./currency";
     styleUrls:["./currency-section.component.scss"]
 })
 export class CurrencyComponent implements OnInit{
+    handlerr:string = ''
    private _amount:number | null = null ;
    private _fromCurrency:string = 'USD';
    private _toCurrency:string = 'EGP';
@@ -49,6 +50,10 @@ export class CurrencyComponent implements OnInit{
     return this._ConvertAmount;
   }
     convertCurrency():void{
+       
+        if(this._fromCurrency === this._toCurrency){
+            this.handlerr = 'you cant convert between both same currency'
+        }
         if (this._amount !== null) {
             const rate = this.currencyRate[this.fromCurrency][this.toCurrency];
             this._ConvertAmount = this._amount * rate;

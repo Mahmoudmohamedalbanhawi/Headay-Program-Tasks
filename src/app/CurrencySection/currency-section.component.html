@@ -1,4 +1,4 @@
-<section class="container ">
+<section class="container position-relative "  >
     <input type="text" [(ngModel)]="amount" class="form-control w-50 m-auto" placeholder="Amount"/>
     <div class="row justify-content-center mt-3">
         <div class="col-6 text-start">
@@ -21,10 +21,12 @@
         <option *ngFor="let currency of currencies" [value]="currency.currency"  > {{currency.currency}}</option>
     </select>
     <p class="text-center mt-3">Exchange Rate</p>
-    <ng-container *ngIf="ConvertAmount !== null; else zeroAmount">
+    <ng-container *ngIf="ConvertAmount !== null  ; else zeroAmount">
         <h2 class="text-center text-primary fw-bold"> {{ ConvertAmount | currency: toCurrency }}</h2>
       </ng-container>
-      
+      <div class="text-primary text-center fw-bold " *ngIf="fromCurrency === toCurrency">
+        <p>{{handlerr}}</p>
+      </div>
       <ng-template #zeroAmount>
         <p class="text-center text-primary fw-bold">0.00</p>
       </ng-template>
