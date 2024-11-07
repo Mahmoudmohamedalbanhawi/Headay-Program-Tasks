@@ -1,0 +1,23 @@
+@mixin generate-font-classes {
+    @each $device, $query in $breakpoints {
+      @each $index, $size in map-get($font-sizes, $device) {
+        .font-#{$index}-#{$device} {
+          @media #{$query} {
+            font-size: $size;
+          }
+        }
+      }
+    }
+  }
+  @mixin generate-line-height-classes {
+    @each $device, $query in $breakpoints {
+      @each $index, $line-height in map-get($line-heights, $device) {
+        .line-height-#{$index}-#{$device} {
+          @media #{$query} {
+            line-height: $line-height;
+          }
+        }
+      }
+    }
+  }
+  

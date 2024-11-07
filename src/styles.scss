@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/Base/fonts';
+@import './assets/scss/Base/resets';
+@import './assets/scss/utils/mediaqueries';
+@import './assets/scss/utils/mixins';
+@import './assets/scss/utils/variables';
+@import './assets/scss/Base/colors';
+@include generate-font-classes;
+@include generate-line-height-classes;
