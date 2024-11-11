@@ -10,7 +10,6 @@ import { Subscription } from "rxjs";
 })
 export class HotTopicsComponent implements OnInit , OnDestroy{
     Title:string ="Hot Topics"
-    hamada:string = "Hamda yel3eb"
     HotTopics:IProduct[] = []
     ErrorMessage:string = ``
     sub!:Subscription
@@ -37,3 +36,4 @@ export class HotTopicsComponent implements OnInit , OnDestroy{
         this.sub.unsubscribe()
     }
 }
+
