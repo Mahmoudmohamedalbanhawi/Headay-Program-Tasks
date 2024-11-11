@@ -1,68 +1,29 @@
 import { Injectable } from '@angular/core';
 import { IProduct } from '../../assets/Shared/Interface/products';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { catchError, Observable, tap, throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
-  fetchProducts(): IProduct[]{
-    return [
-      {
-        "productid":1,
-        "imageUrl":"assets/images/img2.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      },
-      {
-        "productid":2,
-        "imageUrl":"assets/images/img3.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      },
-      {
-        "productid":3,
-        "imageUrl":"assets/images/img4.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      },
-      {
-        "productid":4,
-        "imageUrl":"assets/images/img5.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      },
-      {
-        "productid":5,
-        "imageUrl":"assets/images/img6.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      },
-      {
-        "productid":6,
-        "imageUrl":"assets/images/img7.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      },
-      {
-        "productid":7,
-        "imageUrl":"assets/images/img8.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      },
-      {
-        "productid":9,
-        "imageUrl":"assets/images/img9.png",
-        "description":"News Title Lorem Ipsum Dolor Sit Amet",
-        "time":"1 Hour Ago",
-        "channel":"CNN Indonesia"
-      }
-    ]
+  private ApiKey = `e103084dbd684ebda4232c01aa8ac30e`
+  private productUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${this.ApiKey}` 
+  constructor(private http:HttpClient){}
+  fetchProducts(): Observable<any>{
+    return this.http.get<IProduct>(this.productUrl).pipe(
+      tap(data => JSON.stringify(data)),
+      catchError(this.handleError)
+    )
   }
-  constructor() { }
+  private handleError(err: HttpErrorResponse){
+    let errorMessage = ``;
+    if(err.error instanceof ErrorEvent){
+      errorMessage = `An error occured : ${err.error.message}`
+    }
+    else {
+      errorMessage = `Server retured code : ${err.status} , error message is : ${err.message}`
+    }
+    return throwError(()=> errorMessage)
+  }
+
 }

@@ -9,4 +9,11 @@ import { IProduct } from "../../assets/Shared/Interface/products";
 
 export class ProductCardComponent{
     @Input() product!:IProduct;
+    getauthor(author:string):string {
+        const words = author.split(" ");
+        if(words.length > 2){
+            return words.slice(0,2).join(' ')
+        }
+        return author
+      }
 }

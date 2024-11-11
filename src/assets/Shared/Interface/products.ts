@@ -1,7 +1,10 @@
 export interface IProduct {
-    productid:number
-    imageUrl:string ,
+    urlToImage:string ,
     description:string,
-    time:string ,
-    channel:string
+    author:string ,
+    title:string ,
+    content:string ,
+    publishedAt:string ,
+    url:string,
+    source:object
 }
