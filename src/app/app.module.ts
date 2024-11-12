@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './Navbar/Navbar.component';
 import { HotTopicsComponent } from './HotTopics/hot-topics.component';
 import { LatestNewsComponent } from './LatestNews/latest-news.component';
-import { ProductCardComponent } from './ProductCard/product-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NewsCardComponent } from './NewsCard/news-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     HotTopicsComponent,
     LatestNewsComponent,
-    ProductCardComponent,
+    NewsCardComponent,
     FooterComponent
   ],
   imports: [

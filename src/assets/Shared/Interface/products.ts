@@ -6,5 +6,5 @@ export interface IProduct {
     content:string ,
     publishedAt:string ,
     url:string,
-    source:object
+    source:{id:null | string , name:string}
 }

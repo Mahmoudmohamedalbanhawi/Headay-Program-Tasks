@@ -1,17 +1,18 @@
 import { Injectable } from '@angular/core';
 import { IProduct } from '../../assets/Shared/Interface/products';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { catchError, Observable, tap, throwError } from 'rxjs';
+import { catchError, map, Observable, tap, throwError } from 'rxjs';
+import { Api } from '../../env/api';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
-  private ApiKey = `e103084dbd684ebda4232c01aa8ac30e`
-  private productUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${this.ApiKey}` 
+ 
+  private productUrl = `${Api.ApiUrl}top-headlines?country=us&category=business&apiKey=${Api.ApiKey}` 
   constructor(private http:HttpClient){}
   fetchProducts(): Observable<any>{
-    return this.http.get<IProduct>(this.productUrl).pipe(
-      tap(data => JSON.stringify(data)),
+    return this.http.get<any>(this.productUrl).pipe(
+      map(data =>data.articles),
       catchError(this.handleError)
     )
   }

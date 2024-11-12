@@ -1,20 +1,9 @@
 .card-container {
-    display: flex;
-    flex-wrap: wrap; 
-    overflow: hidden;
     min-height: 400px; 
-    
-    height: 100%; 
-    
     span {
         font-family: 'Roboto';
     }
-
     .Card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; 
-        height: 100%;
       .final-news{
         margin-top: auto;
       }
@@ -22,6 +11,5 @@
             height: 140px; 
             object-fit: cover; 
         }
-       
     }
 }

@@ -3,11 +3,11 @@ import { IProduct } from "../../assets/Shared/Interface/products";
 
 @Component({
     selector:"app-card",
-    templateUrl:"./product-card.component.html",
-    styleUrls:['./product-card.component.scss']
+    templateUrl:"./news-card.component.html",
+    styleUrls:['./news-card.component.scss']
 })
 
-export class ProductCardComponent{
+export class NewsCardComponent{
     @Input() product!:IProduct;
     getauthor(author:string):string {
         const words = author.split(" ");

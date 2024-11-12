@@ -17,7 +17,7 @@ export class HotTopicsComponent implements OnInit , OnDestroy{
     ngOnInit(): void {
        this.sub = this.ServiceProduct.fetchProducts().subscribe({
             next:next=>{
-                this.HotTopics = next.articles
+                this.HotTopics = next
                
             },
             error:err=>{

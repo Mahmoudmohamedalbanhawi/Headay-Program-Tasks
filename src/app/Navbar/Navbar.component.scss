@@ -1,0 +1,14 @@
+
+
+.navbar-toggler {
+    background-color: transparent;
+   
+    border: transparent var(--bs-navbar-toggler-border-color); 
+    box-shadow: none; 
+    &:focus,
+    &:hover {
+      outline: none;
+      text-decoration: none;
+      box-shadow: none;
+    }
+  }

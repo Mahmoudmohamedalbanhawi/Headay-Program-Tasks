@@ -19,7 +19,7 @@ export class LatestNewsComponent implements OnInit , OnDestroy{
     ngOnInit(): void {
       this.sub =  this.product.fetchProducts().subscribe({
             next:products=> {
-                this.products = products.articles
+                this.products = products
                 console.log(this.products)
             },
             error:err=> this.errorMessage = err
