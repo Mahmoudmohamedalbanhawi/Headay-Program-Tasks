@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "currency-app": {
+    "news-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/currency-app",
+            "outputPath": "dist/news-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -35,7 +35,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "assets"
               }
             ],
             "styles": [
@@ -77,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "currency-app:build:production"
+              "buildTarget": "news-app:build:production"
             },
             "development": {
-              "buildTarget": "currency-app:build:development"
+              "buildTarget": "news-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -100,8 +101,10 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "assets"
               }
+
             ],
             "styles": [
               "src/styles.scss"
@@ -113,6 +116,6 @@
     }
   },
   "cli": {
-    "analytics": "51aa4b1a-b94c-4815-9329-441c4e9bc73b"
+    "analytics": "448b9023-acef-494a-b335-22914022c7a8"
   }
 }

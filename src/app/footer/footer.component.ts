@@ -5,5 +5,5 @@ import { Component } from "@angular/core";
     templateUrl:"./footer.component.html"
 })
 export class FooterComponent{
-    content:string = 'Copyright - kayman Communications [2022]'
+    title:string ="Copyright 2021 News Portal"
 }

@@ -1,0 +1,15 @@
+.card-container {
+    min-height: 400px; 
+    span {
+        font-family: 'Roboto';
+    }
+    .Card {
+      .final-news{
+        margin-top: auto;
+      }
+        img {
+            height: 140px; 
+            object-fit: cover; 
+        }
+    }
+}

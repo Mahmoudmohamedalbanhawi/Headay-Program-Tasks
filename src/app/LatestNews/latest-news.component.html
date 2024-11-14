@@ -1,0 +1,12 @@
+<section class="container  mt-3 ">
+    <h2 class="mb-4  fw-bold black-80 font-2-desktop font-3-ipad font-5-iphone line-height-9-desktop line-height-5-ipad line-height-5-iphone">{{Title}}</h2>
+    <div class="row" >
+        <div>
+            <p>{{errorMessage}}</p>
+        </div>
+        <div *ngFor="let product of products" class="col-lg-3  col-md-4 col-sm-6 col-6  mb-4">
+            <app-card [product]="product"></app-card>
+        </div>
+      
+    </div>  
+</section>

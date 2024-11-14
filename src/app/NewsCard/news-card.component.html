@@ -1,0 +1,17 @@
+<section class="card-container d-flex  flex-wrap overflow-hidden h-100 ">
+    <div class="Card d-flex flex-column justify-content-start h-100 ">
+       
+        <div class="img">
+            <img class="w-100 d-block rounded" [src]="product.urlToImage ? product.urlToImage :'/assets/images/img2.png' " alt="img-news"/>
+        </div>
+       
+        <div class="description mt-2">
+            <p class="fw-bold mb-0 mb-lg-3  mb-sm-0 black-80 font-4-desktop font-6-ipad font-1-iphone line-height-7-desktop line-height-6-ipad line-height-1-iphone ">{{product.title}}</p>
+        </div>
+        
+        <div class="final-news mt-lg-auto mt-md-auto mt-sm-1">
+             <span class="me-2 black-20 fw-normal font-5-desktop font-7-ipad font-4-iphone line-height-8-desktop line-height-7-ipad line-height-6-iphone ">{{product.publishedAt | date}}</span> 
+            <span class="black-20 fw-normal font-5-desktop font-7-ipad font-4-iphone line-height-8-desktop line-height-7-ipad line-height-6-iphone">{{product.author ? getauthor(product.author)  : "No Author"}}</span>
+        </div>
+    </div>
+    </section>

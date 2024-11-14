@@ -1,0 +1,21 @@
+diff --git a/node_modules/bootstrap/scss/_navbar.scss b/node_modules/bootstrap/scss/_navbar.scss
+index 7161938..0e9cbba 100644
+--- a/node_modules/bootstrap/scss/_navbar.scss
++++ b/node_modules/bootstrap/scss/_navbar.scss
+@@ -153,7 +153,7 @@
+   line-height: 1;
+   color: var(--#{$prefix}navbar-color);
+   background-color: transparent; // remove default button style
+-  border: var(--#{$prefix}border-width) solid var(--#{$prefix}navbar-toggler-border-color); // remove default button style
++  border: transparent solid var(--#{$prefix}navbar-toggler-border-color); // remove default button style
+   @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
+   @include transition(var(--#{$prefix}navbar-toggler-transition));
+ 
+@@ -164,7 +164,6 @@
+   &:focus {
+     text-decoration: none;
+     outline: 0;
+-    box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
+   }
+ }
+ 

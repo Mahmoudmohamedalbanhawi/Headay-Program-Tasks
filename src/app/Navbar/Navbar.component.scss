@@ -1,26 +1,14 @@
-@import '../../assets/scss/Abstract/variables';
-.navbar {
-    .ellipse {
-        width: 52.23px; 
-        height: 52.23px;
-        background: linear-gradient(to bottom, $elipseColorone 90%, $elipseColortwo 10%); 
-        border-radius: 50%; 
-        box-shadow: 0 14.92px 14.92px 0 $shadowcolor ; 
+
+
+.navbar-toggler {
+    background-color: transparent;
+   
+    border: transparent var(--bs-navbar-toggler-border-color); 
+    box-shadow: none; 
+    &:focus,
+    &:hover {
+      outline: none;
+      text-decoration: none;
+      box-shadow: none;
     }
-    .nav-link {
-        position: relative;
-        &.active::before{
-            content: '';
-            position: absolute;
-            bottom: 2px; 
-            left: 35%;
-            transform: translateX(-50%);
-            width: 40%;
-            height: 2.5px;
-            background-color:$border-100 ; 
-        }
-    }
-    
-    
-    
-}
+  }
